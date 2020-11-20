@@ -1,0 +1,23 @@
+h1 {
+    padding: 20px 40px 20px 0px;
+    margin-left: 50px;
+    background: rgb(92, 21, 207);
+    color: cornflowerblue;
+}
+h2 {
+    padding: 40px 40px;
+    border-top: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;
+    background: peachpuff;
+}
+section {
+    border: 10px solid blue;
+    height: 300px;
+    margin-top: 400px;
+
+}
+span {
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 10px;
+}
