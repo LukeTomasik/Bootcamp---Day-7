@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Clear fix hack */
@@ -21,18 +23,84 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+body header img{
+  height: 30px;
+  width: auto;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+header nav {
+  border: 1px solid red;
+  height: 50px;
+ }
+ 
+ header nav > img,header nav > img + ul, header nav > img + ul + form {
+  float: left;
+ width: 33.33%;
+ border: 1px solid blue;
+ }
 
+ nav ul li {
+   float: left;
+   margin: 0px 2px;
+   list-style: none;
+ }
+
+ /***********************************************
+                Main top Section
+
+ /***********************************************/
+ main {
+ }
+ main section {
+   border: 1px solid purple;
+   height: 60vh;
+ }
+
+ /* how come height % doesnt work??*/
+ main section > section {
+   border: 3px solid orange;
+   width: 100%;
+   height: 40px;
+ }
+ section > section h1, section > section h1 + h3 {
+   float: left;
+  width: 50%;
+  border: 1px solid black;
+  height: 100%;
+  margin: 0px;
+ }
+main > section article, main > section article + figure{
+  background: rgb(255, 193, 193);
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+figure {
+  border: 1px solid green;
+  height: 100%;
+  width: 100%;
+}
+section figure article {
+  border: 1px solid blue;
+  float: left;
+  width: 50%;
+  height: 50%;
 }
 
+/*******************************************************
+                  Bottom Section
+/******************************************************/
+ main > section + section {
+   border: 1px solid green;
+   height: 40vh;
+ }
+ main > section + section article {
+   height: 100%;
+   width: 33.33%;
+ }
 footer {
 
 }
