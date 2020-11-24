@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Clear fix hack */
@@ -38,11 +40,41 @@ body {
 /*******************************************/
 
 header {
-  border: 1px solid red;
+  
   display: inline-block;
-  width: 15%;
+  width: 12%;
   height: 100%;
   position: fixed;
+}
+header nav{
+  padding-left: 30px;
+}
+nav img {
+  margin-top: 30px;
+  height: auto;
+  width: 30%;
+  margin-bottom: 20px;
+}
+nav h1 {
+  color: orange;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+nav ul {
+  padding-top: 30px;
+}
+nav li {
+  padding: 10px 0;
+}
+nav a,nav span {
+  color: rgb(163,163,163);
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+nav ul span {
+  display: inline-block;
+  padding-bottom: 15px;
 }
 
 
@@ -51,9 +83,9 @@ header {
 /*******************************************/
 
 main > section {
-  margin-left: 15%;
+  margin-left: 12%;
   height: 75vh;
-  border: 1px solid red;
+  
   float: left;
 
 }
@@ -63,19 +95,40 @@ main > section {
 .section_topMid {
   float: left;
   width: 60%;
-  border: 1px solid blue;
+  
   height: 100%;
 }
+.section_topMid div h6 {
+  color: orange;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.section_topMid div h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section_topMid div p {
+  color: rgb(163,163,163);
+  font-size: 1.7rem;
+  padding-right: 100px;
+}
+.section_topMid div span {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
 .section_topMid div {
-  height: 40%;
+  height: 25%;
   width: 100%;
 }
 .section_topMid figure {
   width: 100%;
-  height: 60%;
+  height: 75%;
 }
 .section_topMid figure img {
-  height: 100%;
+  height: 98%;
   width: 100%;
 }
 
@@ -84,40 +137,72 @@ main > section {
 /*******************************************/
 .section_topRight {
   float: right;
-  border: 1px solid rgb(255, 123, 0);
+  /* border: 1px solid rgb(255, 123, 0); */
   width: 40%;
   height: 100%;
 }
 .section_topRight a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
   display: inline-block;
 }
 .section_topRight ul {
+  padding-left: 5%;
   width: 100%;
   height: 100%;
 }
 .section_topRight li {
-  height: 25%;
+  height: 20%;
 }
-.section_topRight li a {
-  width: 100%;
-  font-size: 2rem;
+.section_topRight span {
+  font-size: 1.2rem;
+  color: rgb(163,163,163);
+  
 }
 /******************************************
 /* Bottom Section 
 /*******************************************/
 
 main> section + section {
-  border: 2px solid green;
+  margin-top: 20px;
+  
   height: 35vh;
+}
+.second_section article a {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  width: 100%;
+  display: inline-block;
+}
+.second_section h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .second_section article {
-  border: 1px solid blue;
+  
   float: left;
- height: 95%;
+ height: 88%;
  width: 33.33%;
 }
+.second_section > article p {
+  padding-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.second_section > article + article p {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  color: rgb(163,163,163);
+
+}
+
 .second_section img {
+  padding: 20px;
   width: 100%;
   height: 100%;
 }
