@@ -20,6 +20,9 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+main {
+  height: 120vh;
+}
 
 body {
 
@@ -29,12 +32,96 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-nav, main, aside {
-  height: auto;
-  width: 33%;
-  float: left;
-  border: 2px solid blue;
+
+/******************************************
+/* Header
+/*******************************************/
+
+header {
+  border: 1px solid red;
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  position: fixed;
 }
+
+
+/******************************************
+/* Top Section
+/*******************************************/
+
+main > section {
+  margin-left: 15%;
+  height: 75vh;
+  border: 1px solid red;
+  float: left;
+
+}
+/******************************************
+/* Top Section - Mid
+/*******************************************/
+.section_topMid {
+  float: left;
+  width: 60%;
+  border: 1px solid blue;
+  height: 100%;
+}
+.section_topMid div {
+  height: 40%;
+  width: 100%;
+}
+.section_topMid figure {
+  width: 100%;
+  height: 60%;
+}
+.section_topMid figure img {
+  height: 100%;
+  width: 100%;
+}
+
+/******************************************
+/* Top Section - Right
+/*******************************************/
+.section_topRight {
+  float: right;
+  border: 1px solid rgb(255, 123, 0);
+  width: 40%;
+  height: 100%;
+}
+.section_topRight a {
+  display: inline-block;
+}
+.section_topRight ul {
+  width: 100%;
+  height: 100%;
+}
+.section_topRight li {
+  height: 25%;
+}
+.section_topRight li a {
+  width: 100%;
+  font-size: 2rem;
+}
+/******************************************
+/* Bottom Section 
+/*******************************************/
+
+main> section + section {
+  border: 2px solid green;
+  height: 35vh;
+}
+
+.second_section article {
+  border: 1px solid blue;
+  float: left;
+ height: 95%;
+ width: 33.33%;
+}
+.second_section img {
+  width: 100%;
+  height: 100%;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
