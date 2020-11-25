@@ -6,18 +6,21 @@
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Blank Template</title>
+		<title>BBC Layout</title>
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
+		<script src="https://kit.fontawesome.com/7ffdd2d782.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
 			<nav>
-				<img src="../class-layout-photos/bbc-image.png" alt="">
+				<figure>
+					<img src="BBC_Logo.png" alt="BBC Logo">
+				</figure>
 				<ul>
-					<li><a href="#">Sign In</a></li>
+					<li class="sign_in"><a href="#"><i class="fas fa-user-circle"></i>Sign In</a></li>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">Sport</a></li>
@@ -26,71 +29,65 @@
 					<li><a href="#">Travel</a></li>
 					<li><a href="#">Future</a></li>
 					<li><a href="#">Culture</a></li>
-					<li><a href="#">More</a></li>
+					<li class="more"><a href="#">More</a></li>
 				</ul>
 				<form action="index.html">
-					<input type="text" placeholder="Search...">
+					<input type="text" placeholder="Search..."><i class="fas fa-search"></i>
 				</form>
 			</nav>
-			<main>
-				<section>
-					<section>
-						<h1>Welcome To BBC.Com</h1>
-						<h3>Thursday Date</h3>
-					</section>
-					<article>
-						<img src="" alt="">
-						<img src="" alt="">
-						<h2>Israel and UAE strike historic peace deal</h2>
-						<p>israel and the uae agree to normalise relations marking the third israel-Arab peace deal</p>
-						<span><a href="#">MIDDLE EAST</a></span>
-					</article>
-					<figure>
-						<article>
-							<img src="" alt="">
-							<h2>AMerican go home tensions at canada us border</h2>
-							<span><a href="#">CANADA</a></span>
-						</article>
-						<article>
-							<img src="" alt="">
-							<h2>AMerican go home tensions at canada us border</h2>
-							<span><a href="#">HEALTH</a></span>
-						</article>
-						<article>
-							<img src="" alt="">
-							<h2>AMerican go home tensions at canada us border</h2>
-							<span><a href="#">WORKLIFE</a></span>
-						</article>
-						<article>
-							<img src="" alt="">
-							<h2>AMerican go home tensions at canada us border</h2>
-							<span><a href="#">CULTURE</a></span>
-						</article>
-					</figure>
-				</section>
-				<section>
-					<h2>News</h2>
-					<article>
-						<img src="" alt="">
-						<h2>AMerican go home tensions at canada us border</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-						<span><a href="#">CULTURE</a></span>
-					</article>
-					<article>
-						<img src="" alt="">
-						<h2>AMerican go home tensions at canada us border</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-						<span><a href="#">CULTURE</a></span>
-					</article>
-					<article>
-						<img src="" alt="">
-						<h2>AMerican go home tensions at canada us border</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-						<span><a href="#">CULTURE</a></span>
-					</article>
-				</section>
-			</main>
 		</header>
+		<main>
+			<section class="top_section">
+				<section>
+					<h1>Welcome To BBC.Com</h1>
+					<h3>Thursday Date</h3>
+				</section>
+				<article>
+					<h2>Israel and UAE strike historic peace deal</h2>
+					<p>israel and the uae agree to normalise relations marking the third israel-Arab peace deal</p>
+					<span><a href="#">MIDDLE EAST</a></span>
+				</article>
+				<figure>
+					<article>
+						<h2>AMerican go home tensions at canada us border</h2>
+						<span><a href="#">CANADA</a></span>
+					</article>
+					<article>
+						<h2>AMerican go home tensions at canada us border</h2>
+						<span><a href="#">HEALTH</a></span>
+					</article>
+					<article>
+						<h2>AMerican go home tensions at canada us border</h2>
+						<span><a href="#">WORKLIFE</a></span>
+					</article>
+					<article>
+						<h2>AMerican go home tensions at canada us border</h2>
+						<span><a href="#">CULTURE</a></span>
+					</article>
+				</figure>
+			</section>
+			<section class="bottom_section">
+				<h2><span>News</span></h2>
+				<article>
+					<img class="column_img1" src="left_column_Photo.png" alt="Biden Harris">
+					<h2>AMerican go home tensions at canada us border</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<span><a href="#">CULTURE</a></span>
+				</article>
+				<article>
+					<img class="column_img2" src="middle_column_photo.png" alt="Lady holds up Peace SIgn">
+					<h2>AMerican go home tensions at canada us border</h2>
+					<p>women take to the streets of minsk dressed in white as they demand an end to polic brutality</p>
+					<span><a href="#">CULTURE</a></span>
+				</article>
+				<article>
+					<img class="column_img3" src="third_column_photo.png" alt="Trumps hair waving">
+					<h2>AMerican go home tensions at canada us border</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<span><a href="#">CULTURE</a></span>
+				</article>
+			</section>
+		</main>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
