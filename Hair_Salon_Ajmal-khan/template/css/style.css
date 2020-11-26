@@ -1,0 +1,396 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* Header
+/*******************************************/
+header {
+  border: 1px solid red;
+  height: 6vh;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_h1Container, .nav_iconsContainer,.nav_bookFunctionContainer,.nav_navContainer {
+  height: 6vh;
+  border: 1px solid blue;
+}
+.nav_h1Container {
+  width: 15%;
+}
+.nav_h1Container h1 {
+  font-size: 2.5rem;
+  padding-left: 40px;
+  padding-top: 8px;
+}
+.nav_navContainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav_navContainer li {
+  padding-top: 18px;
+}
+.nav_navContainer li a{
+color: black;
+text-decoration: none;
+text-transform: uppercase;
+}
+.nav_iconsContainer {
+  width: 15%;
+}
+.nav_iconsContainer i {
+  padding-left: 20px;
+  font-size: 1.2rem;
+  padding-top: 18px;
+
+}
+.nav_bookFunctionContainer {
+width:10%;
+display: flex;
+padding-top: 18px;
+padding-left: 10px;
+}
+.nav_bookFunctionContainer p {
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+/* Making a span go to the middle */
+.nav_bookFunctionContainer span {
+
+}
+  
+
+/******************************************
+/* Main
+/*******************************************/
+.main_section {
+  width: 100%;
+  height: 110vh;
+  
+}
+.main_sectionTop {
+  background-image: url(Hair_salon_Final.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  background-size: 100%;
+  height: 70vh;
+  width: 100%;
+  border: 2px solid green;
+  display: flex;
+}
+.main_sectionTop article {
+  height: 100%;
+}
+.article_one {
+  position: relative;
+  border: 1px solid rgb(134, 12, 134);
+  width: 70%;
+}
+
+.article_one h1 {
+  padding-top: 80px;
+  padding-left: 80px;
+  font-size: 5rem;
+  color: aqua;
+}
+.article_one > p {
+  margin-left: 80px;
+  padding: 25px 0;
+  font-size: 1.3rem;
+  color: blueviolet;
+}
+.article_one > button {
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  font-size: 1.3rem;
+  margin-left: 80px;
+  background: black;
+  color: white;
+}
+.bottom_leftBlackBox {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 20%;
+  border: 2px solid orange;
+  height: 200px;
+}
+.bottom_leftBlackBox p{
+  margin-left: 10px;
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+.bottom_leftBlackBox .ad {
+  line-height: 2rem;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+.ad span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bottom_leftBlackBox button {
+  width: 120px;
+  font-size: .8rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 40px;
+  background: rgb(255, 208, 119);
+}
+.article_two {
+  position: relative;
+  border: 1px solid cyan;
+  width: 30%;
+}
+.article_two .p,.article_two div {
+  height: 300px;
+  border: 1px solid red;
+}
+.article_two .p {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  margin: 0px;
+  writing-mode: vertical-rl;
+text-orientation: sideways; 
+}
+.article_two .button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  height: 50px;
+  width: 100px;
+  align-self: flex-end;
+}
+.button_container .left,.button_container .right {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+}
+/******************************************
+/* main section Bottom
+/*******************************************/
+.main_sectionBottom  {
+  margin: 0 auto;
+  border: 1px solid red;
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  text-align: center;
+}
+
+.main_sectionBottom > section {
+  margin-right: 20px;
+  border: 1px solid violet;
+}
+.main_sectionBottom > section i {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+.main_sectionBottom > section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.third_section {
+  width: 100%;
+  border: 1px solid green;
+  height: 40vh;
+}
+.third_section > div {
+  height: 40vh;
+  display: flex;
+}
+.third_section div > article,.third_section div > figure {
+  margin: 70px 0px;
+  border: 1px solid red;
+  height: auto;
+  width: 50%;
+}
+.third_section div > article {
+  margin-left: 140px;
+  margin-right: 20px;
+}
+.third_section article h4 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.third_section article p {
+  line-height: 1.2rem;
+  margin-bottom: 20px;
+}
+.third_section article button {
+  height: 40px;
+  width: 120px;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 2px;
+} 
+.third_section div > figure {
+  margin-right: 140px;
+  margin-left: 20px;
+}
+.third_section div > figure img {
+  width: 100%;
+  height: 100%;
+}
+/******************************************
+/* fourth section
+/*******************************************/
+.fourth_section {
+  width: 100%;
+  border: 1px solid green;
+  height: 40vh;
+}
+
+.fourth_sectionContainer {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid blue;
+  width: 70%;
+  height: 90%;
+}
+.name_plate {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background: rgb(163, 163, 255);
+  height: 50px;
+  width: 200px;
+}
+.name_plate p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+.name_plate.two {
+  left: 350px;
+}
+.name_plate.three {
+  left: 650px;
+}
+.section_imgHolder {
+  border: 1px solid purple;
+  margin: 20px 10px;
+  height: auto;
+  width: 33.33%;
+}
+/******************************************
+/* fifth section
+/*******************************************/
+.fifth_section {
+  
+  width: 100%;
+  border: 1px solid green;
+  height: 40vh;
+}
+.fifth_sectionContainer {
+  background-origin: border-box;
+  background-image: url(./Color_HighLight_Placeholder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid red;
+margin: 20px auto;
+  width: 80%;
+  height: 90%;
+}
+.fifth_sectionContainer article {
+  padding-left: 50px;
+  margin: 60px 0;
+  height: 200px;
+  align-items: flex-end;
+  border: 1px solid red;
+  width: 400px;
+}
+.fifth_sectionContainer p {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+.fifth_sectionContainer span {
+  font-size: 2.5rem;
+}
+/******************************************
+/* fifth section
+/*******************************************/
+.sixth_section { 
+  width: 100%;
+  border: 1px solid purple;
+  height: 75vh;
+}
+.sixth_section article {
+  height:6%;
+}
+.sixth_section article h2 {
+  text-align: center;
+  font-size: 1.5Rem;
+}
+.sixth_section article span {
+  display: flex;
+  justify-content: center;
+}
+.sixth_section div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+div.sixth_sectionContainer > section {
+  height: 95%;
+}
+.sixth_sectionContainer section {
+  padding: 10px 10px;
+  height: 100%;
+  width: 33.33%;
+  border: 1px solid red;
+}
+.sixth_sectionContainer .one {
+  margin-bottom: 10px;
+  background: rgb(255, 182, 182);
+  height: 40%;
+}
+.middle_column .two {
+  margin-bottom: 10px;
+}
+.sixth_sectionContainer .two {
+  background:rgb(252, 212, 140);
+  height: 59%;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
