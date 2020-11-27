@@ -181,6 +181,7 @@ nav div i {
   color: black;
 }
 .second_section .p {
+  text-align: center;
   margin-top: 25px;
   font-size: 1.4rem;
   padding-right: 250px;
@@ -205,13 +206,219 @@ nav div i {
   border: 1px solid blue;
 }
 .third_sectionContainer {
+ border: 1px solid red;
+ width: 100%;
+ height: 100%;
+}
+.third_sectionContainer article {
+  text-align: center;
+}
+.third_sectionContainer article P {
+  color: rgb(255, 102, 102);
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+.third_sectionContainer article h4 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.third_sectionContainer article ul {
+  display: flex;
+  justify-content: center;
+}
+.third_sectionContainer ul li {
+  height: 50px;
+  margin: 0px 25px;
+}
+.third_sectionContainer ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+}
+.third_sectionUl .activeText {
+  color: rgb(255, 102, 102);
+}
+.third_sectionUl .active {
+  border-bottom: 2px solid rgb(255, 102, 102);
+}
+.third_sectionImgMain {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  height: 70%;
+  border: 1px solid blue;
+}
+.third_sectionImgContaintainer {
+margin-right: 10px;
+  height: 45%;
+  width: 24%;
+  background: rgb(167, 167, 255);
+}
+.third_sectionContainer .img_pageIndicators {
+  justify-content: center;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+}
+.img_pageIndicators span {
+  padding-right: 10px;
+  font-size: 2rem;
+  color: rgb(255, 102, 102);
+  opacity: .6;
+}
+.img_pageIndicators .activeText {
+  opacity: 1;
+  font-size: 2.5rem;
+}
+/******************************************
+/* Fourth_section
+/*******************************************/
+.fourth_section {
+  width: 100%;
+  height: 90vh;
+  border: 1px solid red;
+}
+.fourth_mainSectionTop {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 95%;
+  border: 1px solid green;
+  height: 40%;
+}
+.fourth_sectionTopContainer {
+  text-align: center;
+  width: 100%;
+  height: 80%;
   
 }
-.
-footer {
-
+.fourth_sectionTopContainer > p {
+  padding-top: 20px;
+  color: rgb(255, 102, 102);
+  font-size: 1.3rem;
+}
+.fourth_sectionTopContainer h4 {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-size: 3.5rem;
+}
+.fourth_sectionTopContainer i {
+  font-size: 4rem;
+  color: rgb(255, 102, 102);
+}
+.fourth_sectionTopContainer > p:nth-child(4) {
+  color: black;
+}
+.fourth_sectionTopContainer > p:nth-child(5) {
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 2rem;
+}
+.fourth_sectionBottomContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 20%;
+  
+}
+.bottom_containerLeft,.bottom_containerRight {
+  text-align: center;
+  
+  height: 90%;
+  width: 40%;
+}
+.fourth_sectionBottomContainer > div > p {
+  font-size: 1.2rem;
+}
+.fourth_sectionBottomContainer > div > p + p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.fourth_sectionBottomContainer p{
+  padding-bottom: 15px;
+}
+.fourth_mainSectionBottom {
+  margin: 0 auto;
+  display: flex;
+  height: 50%;
+  width: 95%;
+  border: 1px solid blue;
+}
+.fourth_mainSectionBottom figure {
+  background: rgb(255, 184, 184);
+  width: 80%;
+}
+.fourth_mainSectionBottom i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  font-size: 3rem;
+  color: rgb(255, 102, 102);
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* Fifth section
 /*******************************************/
+.fifth_section {
+  text-align: center;
+ width: 100%;
+ height: 80vh;
+ border: 1px solid green; 
+}
+.fifth_section > p {
+  font-size: 1.5rem;
+  padding: 20px 0;
+  color: rgb(255, 102, 102);
+}
+.fifth_section > h5 {
+  font-size: 5rem;
+  color: black;
+  padding-bottom: 20px;
+}
+.fifth_section div figure {
+  display: flex;
+  justify-content: center;
+}
+.fifth_section div h6{
+  margin-top: 15px;
+  font-size: 2rem;
+}
+.fifth_section div > div {
+  margin-top: 20px;
+}
+.fifth_section div > div i {
+  font-size: 1.3rem;
+  padding: 0 3px;
+  color: gold;
+  margin-bottom: 15px;
+}
+.fifth_section div figure > div {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 1px solid red;
+}
+.fifth_section div figure > div img {
+  border-radius: 50%;
+  width: auto;
+height: 100%
+}
+.fifth_section .review {
+  padding: 0 20%;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 30px;
+}
+
+
+
+/******************************************
+/* Footer section
+/*******************************************/
+footer {
+
+}
