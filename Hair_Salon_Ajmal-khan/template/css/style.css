@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+/*
+                    font-family: 'Castoro', serif;
+
+                    font-family: 'Yellowtail', cursive;
+*/
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -30,7 +37,7 @@ body {
 /* Header
 /*******************************************/
 header {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 6vh;
   width: 100%;
 }
@@ -40,12 +47,14 @@ nav {
 }
 .nav_h1Container, .nav_iconsContainer,.nav_bookFunctionContainer,.nav_navContainer {
   height: 6vh;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .nav_h1Container {
   width: 15%;
 }
 .nav_h1Container h1 {
+  font-family: 'Yellowtail', cursive;
+
   font-size: 2.5rem;
   padding-left: 40px;
   padding-top: 8px;
@@ -59,6 +68,9 @@ nav {
   padding-top: 18px;
 }
 .nav_navContainer li a{
+  font-family: 'Castoro', serif;
+
+  font-size: 20px;
 color: black;
 text-decoration: none;
 text-transform: uppercase;
@@ -68,7 +80,7 @@ text-transform: uppercase;
 }
 .nav_iconsContainer i {
   padding-left: 20px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-top: 18px;
 
 }
@@ -79,7 +91,9 @@ padding-top: 18px;
 padding-left: 10px;
 }
 .nav_bookFunctionContainer p {
-  font-size: 1.3rem;
+  font-family: 'Castoro', serif;
+
+  font-size: 20px;
   padding-left: 10px;
 }
 /* Making a span go to the middle */
@@ -97,93 +111,132 @@ padding-left: 10px;
   
 }
 .main_sectionTop {
+  position: relative;
   background-image: url(Hair_salon_Final.jpg);
   background-repeat: no-repeat;
   background-position: 100% 30%;
   background-size: 100%;
-  height: 70vh;
+  height: 120vh;
   width: 100%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
 }
-.main_sectionTop article {
-  height: 100%;
+.main_sectionTop::after {
+  position: absolute;
+  content: "";
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 1;
+  
+  /* border-radius: 100px 100px 0 0; */
+  
+  /* transform: rotate(25deg); */
+  /* transform-origin: 0 100%; */
+  clip-path: polygon(86% 93%, 94% 86%, 100% 74%, 100% 100%, 0 100%, 0 74%, 73% 93%);
 }
 .article_one {
+  height: 100%;
   position: relative;
-  border: 1px solid rgb(134, 12, 134);
+  /* border: 1px solid rgb(134, 12, 134); */
   width: 70%;
 }
 
 .article_one h1 {
-  padding-top: 80px;
-  padding-left: 80px;
+  margin-top: 250px;
+  padding-left: 120px;
   font-size: 5rem;
-  color: aqua;
+  color: whitesmoke;
 }
 .article_one > p {
-  margin-left: 80px;
+  margin-left: 120px;
   padding: 25px 0;
   font-size: 1.3rem;
-  color: blueviolet;
+  text-transform: uppercase;
+  color: whitesmoke;
 }
 .article_one > button {
+  font-family: 'Castoro', serif;
+  text-transform: uppercase;
   border: none;
   border-radius: 3px;
-  height: 50px;
-  font-size: 1.3rem;
-  margin-left: 80px;
+  width: 180px;
+  height: 60px;
+  font-size: 15px;
+  margin-left: 120px;
   background: black;
   color: white;
 }
 .bottom_leftBlackBox {
+  z-index: 100;
   position: absolute;
   bottom: 0;
-  left: 80px;
-  width: 20%;
-  border: 2px solid orange;
-  height: 200px;
+  left: 120px;
+  width: 30%;
+  background: black;
+  height: 330px;
 }
 .bottom_leftBlackBox p{
-  margin-left: 10px;
-  font-size: 1.1rem;
-  padding: 10px 0;
+  text-transform: uppercase;
+  font-family: 'Castoro', serif;
+  text-align: justify;
+  color: whitesmoke;
+  margin-left: 30px;
+  font-size: 1.3rem;
+  padding-top: 30px;
 }
 .bottom_leftBlackBox .ad {
-  line-height: 2rem;
-  margin-left: 10px;
-  font-size: 1.1rem;
+  padding-right: 30px;
+  line-height: 2.5rem;
+  margin-left: 30px;
+  font-size: 1.6rem;
 }
 .ad span {
-  font-size: 2rem;
+  font-family: 'Castoro', serif;
+  color: whitesmoke;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 .bottom_leftBlackBox button {
-  width: 120px;
-  font-size: .8rem;
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 40px;
-  background: rgb(255, 208, 119);
+  text-transform: uppercase;
+  font-family: 'Castoro', serif;
+  color: black;
+  width: 200px;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 60px;
+  border: none;
+  background: whitesmoke;
 }
 .article_two {
   position: relative;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   width: 30%;
 }
-.article_two .p,.article_two div {
-  height: 300px;
-  border: 1px solid red;
-}
 .article_two .p {
+  height: 300px;
+  /* border: 1px solid red; */
   position: absolute;
   right: 0;
   top: 20%;
-  margin: 0px;
+  margin-right: 30px;
   writing-mode: vertical-rl;
 text-orientation: sideways; 
 }
+.article_two .p p {
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: 'Castoro', serif;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
 .article_two .button_container {
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,22 +251,26 @@ text-orientation: sideways;
   height: 35px;
   width: 35px;
   border-radius: 50px;
+  border: none;
+  background: whitesmoke;
 }
 /******************************************
 /* main section Bottom
 /*******************************************/
 .main_sectionBottom  {
   margin: 0 auto;
-  border: 1px solid red;
-  height: 30vh;
-  width: 80%;
+  /* border: 1px solid red; */
+  height: 50vh;
+  width: 90%;
   display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .main_sectionBottom > section {
-  margin-right: 20px;
-  border: 1px solid violet;
+  padding-top: 80px;
+  margin-right: 50px;
+  /* border: 1px solid violet; */
 }
 .main_sectionBottom > section i {
   font-size: 4rem;
@@ -223,45 +280,59 @@ text-orientation: sideways;
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
+
+/******************************************
+/* Third section Bottom
+/*******************************************/
+
 .third_section {
   width: 100%;
-  border: 1px solid green;
-  height: 40vh;
+  /* border: 1px solid green; */
+  height: 50vh;
 }
 .third_section > div {
-  height: 40vh;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-left: 380px;
+  padding-right: 380px;
+  height: 50vh;
   display: flex;
 }
 .third_section div > article,.third_section div > figure {
-  margin: 70px 0px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: auto;
   width: 50%;
 }
-.third_section div > article {
+/* .third_section div > article {
   margin-left: 140px;
   margin-right: 20px;
-}
+} */
 .third_section article h4 {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Castoro', serif;
+  font-size: 3rem;
   margin-bottom: 20px;
+  padding-right: 30px;
 }
 .third_section article p {
-  line-height: 1.2rem;
+  font-family: 'Castoro', serif;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
+  padding-right: 70px;
 }
 .third_section article button {
   height: 40px;
-  width: 120px;
+  width: 190px;
   color: white;
   background: black;
   border: none;
   border-radius: 2px;
 } 
-.third_section div > figure {
+/* .third_section div > figure {
   margin-right: 140px;
   margin-left: 20px;
-}
+} */
 .third_section div > figure img {
   width: 100%;
   height: 100%;
@@ -271,15 +342,15 @@ text-orientation: sideways;
 /*******************************************/
 .fourth_section {
   width: 100%;
-  border: 1px solid green;
-  height: 40vh;
+  /* border: 1px solid green; */
+  height: 70vh;
 }
 
 .fourth_sectionContainer {
   position: relative;
   margin: 0 auto;
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 70%;
   height: 90%;
 }
@@ -287,7 +358,7 @@ text-orientation: sideways;
   text-align: center;
   position: absolute;
   bottom: 0;
-  left: 50px;
+  left: 120px;
   background: rgb(163, 163, 255);
   height: 50px;
   width: 200px;
@@ -297,16 +368,21 @@ text-orientation: sideways;
   margin-top: 5px;
 }
 .name_plate.two {
-  left: 350px;
+  left: 570px;
 }
 .name_plate.three {
-  left: 650px;
+  left: 1020px;
 }
 .section_imgHolder {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   margin: 20px 10px;
   height: auto;
   width: 33.33%;
+}
+.section_imgHolder img {
+  width: 100%;
+  height: 100%;
+  
 }
 /******************************************
 /* fifth section
@@ -314,48 +390,67 @@ text-orientation: sideways;
 .fifth_section {
   
   width: 100%;
-  border: 1px solid green;
-  height: 40vh;
+  /* border: 1px solid green; */
+  height: 60vh;
 }
 .fifth_sectionContainer {
   background-origin: border-box;
   background-image: url(./Color_HighLight_Placeholder.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid red;
-  margin: 20px auto;
-  width: 80%;
-  height: 90%;
+  /* border: 2px solid red; */
+  margin: 0px auto;
+  width: 72%;
+  height: 100%;
 }
 .fifth_sectionContainer article {
   padding-left: 50px;
-  margin: 60px 0;
-  height: 200px;
+  margin-top: 100px;
+  margin-left: 120px;
+  height: 400px;
   align-items: flex-end;
-  border: 1px solid red;
-  width: 400px;
+  /* border: 1px solid red; */
+  width: 600px;
 }
 .fifth_sectionContainer p {
+  font-family: 'Castoro', serif;
   padding: 10px 0;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .fifth_sectionContainer span {
+  font-family: 'Castoro', serif;
   font-size: 2.5rem;
+}
+.fifth_sectionContainer button {
+  font-family: 'Castoro', serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 220px;
+  height: 60px;
+  font-size: 15px;
+  background: black;
+  color: white;
 }
 /******************************************
 /* fifth section
 /*******************************************/
 .sixth_section { 
+  margin-top: 140px;
   width: 100%;
-  border: 1px solid purple;
-  height: 75vh;
+  /* border: 1px solid purple; */
+  height: 120vh;
 }
 .sixth_section article {
   height:6%;
+  margin-bottom: 60px;
 }
 .sixth_section article h2 {
+  font-family: 'Castoro', serif;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 1.5Rem;
+  font-size: 2.5rem;
 }
 .sixth_section article span {
   display: flex;
@@ -373,18 +468,23 @@ div.sixth_sectionContainer > section {
   padding: 10px 10px;
   height: 100%;
   width: 33.33%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .sixth_sectionContainer .one {
   margin-bottom: 10px;
-  background: rgb(255, 182, 182);
+  background-image: url(./Main1_photo_HairSalon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   height: 40%;
 }
 .middle_column .two {
   margin-bottom: 10px;
 }
 .sixth_sectionContainer .two {
-  background:rgb(252, 212, 140);
+  background-image: url(./Video_placeholder.jpg);
+  background-position: center;
+  background-size: cover;
   height: 59%;
 }
 footer {
