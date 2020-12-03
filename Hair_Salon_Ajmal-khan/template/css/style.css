@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+/*  	  <meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
+ */
 /*
                     font-family: 'Castoro', serif;
 
@@ -28,8 +30,8 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+html {
+  font-size: 62.5%;
 }
 
 
@@ -492,5 +494,106 @@ footer {
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* Media Query
 /*******************************************/
+
+@media (min-width:425px) and (max-width:1024px) {
+ 
+  .nav_navContainer li a {
+    font-size: 1.2rem;
+  
+}
+.nav_bookFunctionContainer p {
+  font-size: 1.2rem;
+}
+
+/******************************************
+/* Media Query - Main section
+/*******************************************/
+.main_section,.main_sectionTop {
+  height: 55vh;
+}
+.bottom_leftBlackBox {
+  height: 200px;
+  left: 60px;
+}
+.article_one h1 {
+ margin-top: 50px;
+ padding-left: 60px;
+}
+.article_one > p {
+  margin-left: 60px;
+}
+.article_one > button {
+  margin-left: 60px;
+  height: 50px;
+  width: 110px;
+  font-size: 1.1rem;
+}
+.article_two .p p {
+  font-size: 15px;
+}
+.article_two .button_container {
+  height: 140px;
+  right: 80px;
+}
+.bottom_leftBlackBox .ad {
+  padding-right: 15px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.bottom_leftBlackBox button {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+}
+.main_sectionBottom > section i {
+  font-size: 5rem;
+}
+.main_sectionBottom > section {
+  padding-top: 30px;
+}
+.main_sectionBottom > section h4 {
+  font-size: 1.8rem;
+}
+.main_sectionBottom > section p {
+  font-size: 1.3rem;
+}
+.third_section > div {
+  padding: 30px 50px
+}
+.fourth_sectionContainer {
+  width: 100%;
+}
+.section_imgHolder  {
+  
+  margin-top: 100px;
+  height: 350px;
+}
+.name_plate {
+  bottom: 80px;
+}
+.one {
+  left: 30px;
+}
+.name_plate.two {
+  left: 280px;
+}
+.name_plate.three {
+  left: 535px;
+}
+.fifth_sectionContainer {
+  width: 90%;
+}
+
+.fifth_sectionContainer article {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 300px;
+}
+.sixth_sectionContainer .one {
+  background-size: cover;
+}
+
+} 
+
