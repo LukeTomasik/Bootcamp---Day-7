@@ -12,11 +12,37 @@
 		<script src="https://kit.fontawesome.com/7ffdd2d782.js" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
-			<nav class="nav_mainContainer">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+				<div class="nav_h1Container">
+					<h1>Ayesha</h1>
+				</div>
+				<!-- <a class="navbar-brand logo" href="https://flowster.app/">
+					<img src="img/Flowster-Logo-v2-WP-266x90.png" alt="Flowster">
+				</a>         -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+						<a class="nav-link" href="#offer">Who we are...</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#stylists">Stylists</a>
+						</li>
+						<li class="nav-item sign-up">
+						<a class="nav-link" href="#mediaGallery">Images</a>
+						</li>            
+					</ul>
+				</div>
+			</nav>
+			<!-- <nav class="nav_mainContainer">
 				<div class="nav_h1Container">
 					<h1>Ayesha</h1>
 				</div>
@@ -36,7 +62,7 @@
 					<span>__</span>
 					<p>Book Online</p>
 				</div>
-			</nav>
+			</nav> -->
 		</header>
 		<main>
 			<section class="main_section">
@@ -61,7 +87,7 @@
 						</div>
 					</article>
 				</section>
-				<section class="main_sectionBottom">
+				<section id='offer' class="main_sectionBottom">
 					<section>
 						<i class="far fa-id-card"></i>
 						<h4>Expert Beauticians</h4>
@@ -92,28 +118,28 @@
 						</figure>
 					</div>
 				</section>
-				<section class="fourth_section">
+				<section id = 'stylists' class="fourth_section">
 					<div class="fourth_sectionContainer">
 						<section class="section_imgHolder">
 							<img src="../Left_stylist.png" alt="Hair Stylist - Some Name Here">
 						</section>
 						<section class="name_plate one">
-							<p>some name here</p>
-							<p>type of emp</p>							
+							<p>Abbey</p>
+							<p>Stylist</p>							
 						</section>
 						<section class="section_imgHolder">
 							<img src="../Left_stylist.png" alt="Hair Stylist - Some Name Here">
 						</section>
 						<section class="name_plate two">
-							<p>some name here</p>
-							<p>type of emp</p>						
+							<p>Chloe</p>
+							<p>Stylist</p>						
 						</section>
 						<section class="section_imgHolder">
 							<img src="../Left_stylist.png" alt="Hair Stylist - Some Name Here">
 						</section>
 						<section class="name_plate three">
-							<p>some name here</p>
-							<p>type of emp</p>							
+							<p>Emily</p>
+							<p>Manager</p>							
 						</section>
 					</div>
 				</section>
@@ -127,7 +153,7 @@
 						</article>
 					</article>
 				</section>
-				<section class="sixth_section">
+				<section id='mediaGallery' class="sixth_section">
 					<article>
 						<h2>Our LOOKBOOK</h2>
 						<span>__</span>
@@ -152,7 +178,9 @@
 		<footer>
 
 		</footer>
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 /*  	  <meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
  */
 /*
@@ -14,16 +14,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -33,7 +33,6 @@
 html {
   font-size: 62.5%;
 }
-
 
 /******************************************
 /* Header
@@ -47,7 +46,10 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-.nav_h1Container, .nav_iconsContainer,.nav_bookFunctionContainer,.nav_navContainer {
+.nav_h1Container,
+.nav_iconsContainer,
+.nav_bookFunctionContainer,
+.nav_navContainer {
   height: 6vh;
   /* border: 1px solid blue; */
 }
@@ -55,7 +57,7 @@ nav {
   width: 15%;
 }
 .nav_h1Container h1 {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
 
   font-size: 2.5rem;
   padding-left: 40px;
@@ -69,13 +71,13 @@ nav {
 .nav_navContainer li {
   padding-top: 18px;
 }
-.nav_navContainer li a{
-  font-family: 'Castoro', serif;
+.nav_navContainer li a {
+  font-family: "Castoro", serif;
 
   font-size: 20px;
-color: black;
-text-decoration: none;
-text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .nav_iconsContainer {
   width: 15%;
@@ -84,25 +86,22 @@ text-transform: uppercase;
   padding-left: 20px;
   font-size: 1.4rem;
   padding-top: 18px;
-
 }
 .nav_bookFunctionContainer {
-width:10%;
-display: flex;
-padding-top: 18px;
-padding-left: 10px;
+  width: 10%;
+  display: flex;
+  padding-top: 18px;
+  padding-left: 10px;
 }
 .nav_bookFunctionContainer p {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
 
   font-size: 20px;
   padding-left: 10px;
 }
 /* Making a span go to the middle */
 .nav_bookFunctionContainer span {
-
 }
-  
 
 /******************************************
 /* Main
@@ -110,7 +109,6 @@ padding-left: 10px;
 .main_section {
   width: 100%;
   height: 110vh;
-  
 }
 .main_sectionTop {
   position: relative;
@@ -133,12 +131,20 @@ padding-left: 10px;
   bottom: 0;
   background-color: white;
   z-index: 1;
-  
+
   /* border-radius: 100px 100px 0 0; */
-  
+
   /* transform: rotate(25deg); */
   /* transform-origin: 0 100%; */
-  clip-path: polygon(86% 93%, 94% 86%, 100% 74%, 100% 100%, 0 100%, 0 74%, 73% 93%);
+  clip-path: polygon(
+    86% 93%,
+    94% 86%,
+    100% 74%,
+    100% 100%,
+    0 100%,
+    0 74%,
+    73% 93%
+  );
 }
 .article_one {
   height: 100%;
@@ -161,7 +167,7 @@ padding-left: 10px;
   color: whitesmoke;
 }
 .article_one > button {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
@@ -181,9 +187,9 @@ padding-left: 10px;
   background: black;
   height: 330px;
 }
-.bottom_leftBlackBox p{
+.bottom_leftBlackBox p {
   text-transform: uppercase;
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   text-align: justify;
   color: whitesmoke;
   margin-left: 30px;
@@ -197,14 +203,14 @@ padding-left: 10px;
   font-size: 1.6rem;
 }
 .ad span {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   color: whitesmoke;
   font-size: 2.5rem;
   font-weight: bold;
 }
 .bottom_leftBlackBox button {
   text-transform: uppercase;
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   color: black;
   width: 200px;
   font-size: 1.2rem;
@@ -227,12 +233,12 @@ padding-left: 10px;
   top: 20%;
   margin-right: 30px;
   writing-mode: vertical-rl;
-text-orientation: sideways; 
+  text-orientation: sideways;
 }
 .article_two .p p {
   font-style: italic;
   text-transform: uppercase;
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   color: whitesmoke;
   font-size: 20px;
 }
@@ -249,7 +255,8 @@ text-orientation: sideways;
   width: 100px;
   align-self: flex-end;
 }
-.button_container .left,.button_container .right {
+.button_container .left,
+.button_container .right {
   height: 35px;
   width: 35px;
   border-radius: 50px;
@@ -259,7 +266,7 @@ text-orientation: sideways;
 /******************************************
 /* main section Bottom
 /*******************************************/
-.main_sectionBottom  {
+.main_sectionBottom {
   margin: 0 auto;
   /* border: 1px solid red; */
   height: 50vh;
@@ -300,7 +307,8 @@ text-orientation: sideways;
   height: 50vh;
   display: flex;
 }
-.third_section div > article,.third_section div > figure {
+.third_section div > article,
+.third_section div > figure {
   /* border: 1px solid red; */
   height: auto;
   width: 50%;
@@ -311,13 +319,13 @@ text-orientation: sideways;
 } */
 .third_section article h4 {
   text-transform: uppercase;
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   font-size: 3rem;
   margin-bottom: 20px;
   padding-right: 30px;
 }
 .third_section article p {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   line-height: 1.8rem;
   font-size: 1.1rem;
   margin-bottom: 20px;
@@ -330,7 +338,7 @@ text-orientation: sideways;
   background: black;
   border: none;
   border-radius: 2px;
-} 
+}
 /* .third_section div > figure {
   margin-right: 140px;
   margin-left: 20px;
@@ -384,13 +392,11 @@ text-orientation: sideways;
 .section_imgHolder img {
   width: 100%;
   height: 100%;
-  
 }
 /******************************************
 /* fifth section
 /*******************************************/
 .fifth_section {
-  
   width: 100%;
   /* border: 1px solid green; */
   height: 60vh;
@@ -415,16 +421,16 @@ text-orientation: sideways;
   width: 600px;
 }
 .fifth_sectionContainer p {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   padding: 10px 0;
   font-size: 2rem;
 }
 .fifth_sectionContainer span {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   font-size: 2.5rem;
 }
 .fifth_sectionContainer button {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
@@ -438,18 +444,18 @@ text-orientation: sideways;
 /******************************************
 /* fifth section
 /*******************************************/
-.sixth_section { 
+.sixth_section {
   margin-top: 140px;
   width: 100%;
   /* border: 1px solid purple; */
   height: 120vh;
 }
 .sixth_section article {
-  height:6%;
+  height: 6%;
   margin-bottom: 60px;
 }
 .sixth_section article h2 {
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
@@ -490,110 +496,261 @@ div.sixth_sectionContainer > section {
   height: 59%;
 }
 footer {
-
 }
 
 /******************************************
-/* Media Query
+/* Media Query 
 /*******************************************/
 
-@media (min-width:425px) and (max-width:1024px) {
- 
+/******************************************
+/* Media Query - Main section Tablet
+/*******************************************/
+@media (min-width: 426px) and (max-width: 1024px) {
   .nav_navContainer li a {
     font-size: 1.2rem;
-  
-}
-.nav_bookFunctionContainer p {
-  font-size: 1.2rem;
+  }
+  .nav_bookFunctionContainer p {
+    font-size: 1.2rem;
+  }
+
+  .main_section,
+  .main_sectionTop {
+    height: 55vh;
+  }
+  .bottom_leftBlackBox {
+    height: 200px;
+    left: 60px;
+  }
+  .article_one h1 {
+    margin-top: 50px;
+    padding-left: 60px;
+  }
+  .article_one > p {
+    margin-left: 60px;
+  }
+  .article_one > button {
+    margin-left: 60px;
+    height: 50px;
+    width: 110px;
+    font-size: 1.1rem;
+  }
+  .article_two .p p {
+    font-size: 15px;
+  }
+  .article_two .button_container {
+    height: 140px;
+    right: 80px;
+  }
+  .bottom_leftBlackBox .ad {
+    padding-right: 15px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .bottom_leftBlackBox button {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .main_sectionBottom > section i {
+    font-size: 5rem;
+  }
+  .main_sectionBottom > section {
+    padding-top: 30px;
+  }
+  .main_sectionBottom > section h4 {
+    font-size: 1.8rem;
+  }
+  .main_sectionBottom > section p {
+    font-size: 1.3rem;
+  }
+  .third_section > div {
+    padding: 30px 50px;
+  }
+  .fourth_sectionContainer {
+    width: 100%;
+  }
+  .section_imgHolder {
+    margin-top: 100px;
+    height: 350px;
+  }
+  .name_plate {
+    bottom: 80px;
+  }
+  .one {
+    left: 30px;
+  }
+  .name_plate.two {
+    left: 280px;
+  }
+  .name_plate.three {
+    left: 535px;
+  }
+  .fifth_sectionContainer {
+    width: 90%;
+  }
+
+  .fifth_sectionContainer article {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 300px;
+  }
+  .sixth_sectionContainer .one {
+    background-size: cover;
+  }
 }
 
 /******************************************
-/* Media Query - Main section
+/* Media Query - Main section (Mobile)
 /*******************************************/
-.main_section,.main_sectionTop {
-  height: 55vh;
-}
-.bottom_leftBlackBox {
-  height: 200px;
-  left: 60px;
-}
-.article_one h1 {
- margin-top: 50px;
- padding-left: 60px;
-}
-.article_one > p {
-  margin-left: 60px;
-}
-.article_one > button {
-  margin-left: 60px;
-  height: 50px;
-  width: 110px;
-  font-size: 1.1rem;
-}
-.article_two .p p {
-  font-size: 15px;
-}
-.article_two .button_container {
-  height: 140px;
-  right: 80px;
-}
-.bottom_leftBlackBox .ad {
-  padding-right: 15px;
-  line-height: 1.5rem;
-  font-size: 1.2rem;
-}
-.bottom_leftBlackBox button {
-  width: 100px;
-  height: 50px;
-  margin-top: 10px;
-}
-.main_sectionBottom > section i {
-  font-size: 5rem;
-}
-.main_sectionBottom > section {
-  padding-top: 30px;
-}
-.main_sectionBottom > section h4 {
-  font-size: 1.8rem;
-}
-.main_sectionBottom > section p {
-  font-size: 1.3rem;
-}
-.third_section > div {
-  padding: 30px 50px
-}
-.fourth_sectionContainer {
-  width: 100%;
-}
-.section_imgHolder  {
-  
-  margin-top: 100px;
-  height: 350px;
-}
-.name_plate {
-  bottom: 80px;
-}
-.one {
-  left: 30px;
-}
-.name_plate.two {
-  left: 280px;
-}
-.name_plate.three {
-  left: 535px;
-}
-.fifth_sectionContainer {
-  width: 90%;
-}
+@media only screen and (max-width: 425px) {
+  .nav_navContainer li a {
+    font-size: 1.2rem;
+  }
+  .nav_bookFunctionContainer p {
+    font-size: 1.2rem;
+  }
 
-.fifth_sectionContainer article {
-  margin-top: 40px;
-  margin-left: 50px;
-  width: 300px;
-}
-.sixth_sectionContainer .one {
-  background-size: cover;
-}
+  .main_section,
+  .main_sectionTop {
+    height: 55vh;
+  }
+  .bottom_leftBlackBox {
+    width: 38%;
+    height: 120px;
+    left: 60px;
+  }
+  .article_one h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    padding-left: 60px;
+  }
+  .article_one > p {
+    padding: 5px 0;
+    margin-left: 60px;
+  }
+  .article_one > button {
+    margin-left: 60px;
+    height: 20px;
+    width: 110px;
+    font-size: 0.9rem;
+  }
+  .article_two .p p {
+    font-size: 10px;
+  }
+  .article_two .button_container {
+    height: 140px;
+    right: 80px;
+  }
+  .bottom_leftBlackBox p {
+    text-transform: uppercase;
+    font-family: "Castoro", serif;
+    text-align: justify;
+    color: whitesmoke;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    padding-top: 10px;
+  }
+  .bottom_leftBlackBox .ad {
+    text-align: center;
+    padding-right: 0px;
+    line-height: 1em;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  .bottom_leftBlackBox button {
+    margin-left: 10px;
+    width: 90px;
+    height: 30px;
+    margin-top: 0px;
+    font-size: 10px;
+  }
+  .ad span {
+    font-family: "Castoro", serif;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .main_sectionBottom > section i {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  .main_sectionBottom > section {
+    padding-top: 0px;
+    margin-right: 10px;
+  }
+  .main_sectionBottom > section h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+  }
+  .main_sectionBottom > section p {
+    font-size: 1.3rem;
+  }
+  .third_section > div {
+    padding: 30px 50px;
+  }
+  .third_section article h4 {
+    text-transform: uppercase;
+    font-family: "Castoro", serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-right: 30px;
+  }
+  .third_section article p {
+    font-family: "Castoro", serif;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    padding-right: 5px;
+  }
+  .third_section article button {
+    display: none;
+  }
+  .fourth_sectionContainer {
+    width: 100%;
+  }
+  .section_imgHolder {
+    margin-top: 10px;
+    height: 350px;
+  }
+  .name_plate {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    background: rgb(163, 163, 255);
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+  }
+  .name_plate p {
+    font-size: 1.2rem;
+    margin-top: 2px;
+  }
+  .name_plate {
+    bottom: 80px;
+  }
+  .one {
+    left: 10px;
+    bottom: 10px;
+  }
+  .name_plate.two {
+    left: 155px;
+    bottom: 10px;
+  }
+  .name_plate.three {
+    left: 295px;
+    bottom: 10px;
+  }
+  .fifth_sectionContainer {
+    width: 90%;
+  }
 
-} 
-
+  .fifth_sectionContainer article {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 300px;
+  }
+  .sixth_sectionContainer .one {
+    background-size: cover;
+  }
+}
